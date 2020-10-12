@@ -1,0 +1,368 @@
+/* Navbar */
+/* .navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+} */
+
+/* Add the below transitions to allow a smooth color change  */
+.navbar {
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+  background: rgb(68, 68, 68); /* IE */
+  background: rgba(0, 0, 0, 0.78); /* NON-IE */
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+
+
+
+#header {
+  z-index: 1;
+  position: relative;
+  /* padding: 10px 0; */
+}
+
+#header .navbar .navbar-brand {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white ; 
+  font-family: 'Montserrat', sans-serif;
+}
+#header .navbar .bg-navbar {
+  background-color: #000000;
+}
+
+#header .navbar .get-started-btn {
+  color: #fff;
+  border-radius: 2px;
+  text-align:   center; 
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  background-color: #013e8d;
+  padding: 5px 25px 5px 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+
+.get-started-btn:hover {
+  text-decoration: none;
+}
+/* Ionicon */
+#header .navbar ion-icon {
+  color: #013e8d;
+  border-radius: 2px;
+  text-align:   center; 
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 25px 5px 25px;
+}  
+
+/* Jumbotron */
+.jumbotron {
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+#header .jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  top: 0;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 150px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+.info-panel {
+  /* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5); */
+  border-radius: 3px;
+  margin-top: -100px;
+  background-color: white;
+  padding: 30px;
+  height: 90px;
+  text-align: center;
+}
+
+.info-panel h2 {
+  font-family: 'Crimson Text', serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 5px;
+  color: #013e8d;
+
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+  margin-top: -5px;
+  font-weight: 200;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  .nav-link i {
+    color: white;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 640px;
+  }
+
+  .jumbotron .display-4 {
+    font-family: "Piazzolla", serif;
+    font-size: 80px;
+    font-weight: 100;
+  }
+  .row {
+    width: 100%;
+  }
+  .gallery {
+    position: relative;
+    top: 150px;
+  }
+
+  .col-sm {
+    padding: 0;
+    width: 100%;
+  }
+
+  .img-susut {
+    width: 100%;
+    position: relative;
+  }
+
+  .gallery:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 101, 197, 0.5);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .gallery:hover::after {
+    background-color: rgba(32, 101, 197, 0.65);
+    transition: 0.1s;
+    color: white;
+  }
+
+  .desc-gallery {
+    font-family: "Piazzolla", serif;
+    text-align: center;
+    position: relative;
+    bottom: 90%;
+    color: white;
+    z-index: 0;
+  }
+  .tittle-gallery {
+    font-size: 64px;
+  }
+
+  .square {
+    margin-top: 95px;
+  }
+
+  .info-square {
+    font-family: "Piazzolla", serif;
+    color: white;
+    position: relative;
+    bottom: 50%;
+    text-align: center;
+  }
+
+  .tittle-square {
+    font-size: 53px;
+    font-weight: 180;
+  }
+
+  .desc-square {
+    font-family: 'Crimson Text', serif;
+    font-weight: 200;
+
+  }
+
+  hr {
+    border-top: 1px dashed white;
+  }
+
+  .box-black {
+    content: "";
+    background-image: url(../img/bg_100.png);
+    width: 100%;
+    height: 298px;
+  }
+
+  .square-abu {
+    content: "";
+    background-color: #e5e5e5;
+    position: relative;
+    top: -120%;
+    height: 390px;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .projectstory {
+    position: relative;
+    font-family: "Piazzolla", serif;
+    z-index: 1;
+  }
+  .projectstory::after {
+    content: "";
+    display: block;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 80%;
+    height: 90%;
+    background-color: #e5e5e5;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .projectstory h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: 64px;
+    margin-top: 17%;
+    color: #013e8d;
+  }
+
+  .biru {
+    position: relative;
+    bottom: 40px;
+    background-color: #002554;
+    color: white;
+    width: 90%;
+    margin-bottom: 5px;
+    z-index: 1;
+  }
+
+
+
+  
+  #interview .row .square-abu {
+    content: "";
+    background-color: #e5e5e5;
+    position: relative;
+    top: -90%;
+    height: 390px;
+    width: 100%;
+    z-index: 0;
+  }
+
+  #interview .interviewcontent::after{
+    content: "";
+    display: block;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 80%;
+    height: 90%;
+    background-color: #e5e5e5;
+    position: absolute;
+    z-index: -1;
+  }
+
+  #interview .interviewcontent .col-sm{
+    z-index: 1;
+  }
+
+  #blog h1{
+    font-family: 'Crimson Text', serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #013e8d;;
+  }
+  #recruit h1{
+    font-family: 'Crimson Text', serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #013e8d;;
+  }
+
+  #entry {
+    background-image: url("../img/bg_entry.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -200px;
+    padding-top: 180px;
+    padding-bottom: 3.8rem;
+  }
+
+
+
+  footer {
+    background-color: #002554;
+    color: white !important;
+    font-family: "Piazzolla", serif;
+  }
+}
