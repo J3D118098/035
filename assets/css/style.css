@@ -1,15 +1,4 @@
-/* Navbar */
-/* .navbar {
-  position: relative;
-  z-index: 1;
-}
-
-.navbar-brand {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-} */
-
-/* Add the below transitions to allow a smooth color change  */
+/* to allow a smooth color change  */
 .navbar {
   -webkit-transition: all 0.6s ease-out;
   -moz-transition: all 0.6s ease-out;
@@ -23,16 +12,25 @@
   background: rgba(0, 0, 0, 0.78); /* NON-IE */
 }
 
+/* General */
 .page-section {
   padding: 6rem 0;
 }
 
+h1{
+  font-family: 'Crimson Text', serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 5px;
+  color: #013e8d;;
+}
 
+/* Section : Header */
 
 #header {
   z-index: 1;
   position: relative;
-  /* padding: 10px 0; */
 }
 
 #header .navbar .navbar-brand {
@@ -181,6 +179,8 @@
   .row {
     width: 100%;
   }
+
+  /* Section : Gallery */
   .gallery {
     position: relative;
     top: 150px;
@@ -224,6 +224,8 @@
     font-size: 64px;
   }
 
+  /* Section : Square */
+
   .square {
     margin-top: 95px;
   }
@@ -257,16 +259,8 @@
     width: 100%;
     height: 298px;
   }
-
-  .square-abu {
-    content: "";
-    background-color: #e5e5e5;
-    position: relative;
-    top: -120%;
-    height: 390px;
-    width: 100%;
-    z-index: 0;
-  }
+  
+  /* Section : Project Story */
 
   .projectstory {
     position: relative;
@@ -296,16 +290,16 @@
     position: relative;
     bottom: 40px;
     background-color: #002554;
-    color: white;
+    color: #ffffff;
     width: 90%;
     margin-bottom: 5px;
     z-index: 1;
   }
 
 
-
+  /* Section : Project Interview */
   
-  #interview .row .square-abu {
+  /* #interview .row .square-abu {
     content: "";
     background-color: #e5e5e5;
     position: relative;
@@ -313,9 +307,9 @@
     height: 390px;
     width: 100%;
     z-index: 0;
-  }
+  } */
 
-  #interview .interviewcontent::after{
+  /* #interview .interviewcontent::after{
     content: "";
     display: block;
     margin-top: 10%;
@@ -325,29 +319,36 @@
     background-color: #e5e5e5;
     position: absolute;
     z-index: -1;
+  } */
+
+  #interview::after{
+    content: "";
+    display: block;
+    margin-top: -30%;
+    width: 100%;
+    height: 55%;
+    background-color: #e5e5e5;
+    position: absolute;
+    z-index: -1;
   }
 
   #interview .interviewcontent .col-sm{
     z-index: 1;
   }
 
-  #blog h1{
-    font-family: 'Crimson Text', serif;
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-top: 5px;
-    color: #013e8d;;
-  }
-  #recruit h1{
-    font-family: 'Crimson Text', serif;
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-top: 5px;
-    color: #013e8d;;
+  #interview .btnwhite{
+    background-color: #ffffff;
+    color: #013e8d;
+    border-radius: 2px;
   }
 
+  /* Section : Project Blog */
+
+
+
+  /* Section : Project Recruit */
+
+  /* Section : Entry */
   #entry {
     background-image: url("../img/bg_entry.png");
     background-repeat: no-repeat;
@@ -356,6 +357,20 @@
     margin-top: -200px;
     padding-top: 180px;
     padding-bottom: 3.8rem;
+  }
+
+  #entry .btnblue{
+    color: #ffffff;
+    border-radius: 2px;
+    text-align:   center; 
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    background-color: #002554;
+    padding: 5px 25px 5px 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
   }
 
 
